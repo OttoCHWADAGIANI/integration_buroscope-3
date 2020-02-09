@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* Définit l'encodage de la feuille de style à Unicode UTF-8 */
+/*media query*/
+/*medias queries*/
+@media screen and (max-width:480px){
+	header{
+		justify-content:center;
+		height:10vh;
+		position:fixed;
+		top:0;
+		left:0;
+        z-index:1000;
+    }
+
+    #slider{
+        position: relative;
+        height: 750px;
+        background: url(../images/snowboard-1.jpg) no-repeat 100% 35%;
+        
+    }
+
+    #text_slider{
+        position: absolute;
+        z-index: 1;
+        top:50%;
+        left:50%;
+		transform:translate(-50%,-50%);
+        color: #fff;
+    }
+
+    #social img{
+        width: 12vw;
+    }
+
+    #text_slider{
+        border:  none;
+    }
+/**PRODUITS PRODUITS PRODUITS PRODUITS____________________________________________**/
+    #produits {
+    padding-bottom: 30vw;
+    }
+
+/**FEATURES FEATURES FEATURES FEATURES FEEATURES FEATURES FEATURES FEATURES FEATR**/
+    #features{
+        flex-direction: column;
+    }
+    #features figure{
+        align-items: center;
+        text-align: center;
+        width: 100% ;
+    }
+
+/**footerfooterfooterfooterfooteooterfooterfooterfooterfooterfooterfooterfooterfoooterfoote**/        
+
+    footer{
+        background-color: #000;
+        color: white;	
+        padding: 2vw 10%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }	
+    
+    footer h2{
+        font-size: 1.2em;
+    }
+    
+    footer ul{
+        list-style-type: none;
+        margin: 10px;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    footer .zone_footer{
+        width: 100%;
+    }
+    
+    footer .pre_footer{
+        font-size: 0.9em;
+        margin-top: 5vw;
+    }
+    
+    .zone_footer form{
+        margin: 10px 0 20px;
+  
+    }
+    
+    .zone_footer form input{
+        padding: 5px 10px;
+        width: 75%;
+    }
+    
+    .zone_footer form input [type=submit]{
+        flex: 1;
+    }
+    
+    #social{
+     
+        justify-content: space-between;
+    
+    }
+    
+    #chat img{
+    
+        padding: 0 ;
+        margin: 0 ;
+    }
+    
+}

@@ -1,0 +1,205 @@
+/* CSS Document */
+/*on fait un reset pour éliminer les espacements intrinseques produits par certaines balises*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:arial,sans-serif;
+	font-size: 0.9em;					/*taille adapte*/
+}
+
+.dashicons{								/*regle de style de base pour dashicons*/
+	width: 100%;
+	display: block;
+	height: auto;
+	font-size: 3em;
+	
+}
+
+
+p{
+	padding: 8px 0;
+	width: 100%;
+}
+
+h1{
+	font-size: 1.4em;
+	width: 100%;
+}
+
+/************************************************************************************/
+
+header{
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;			/*centre verticalement (flex-start) (center) (flex-end)*/
+	padding: 5px 10%;
+}
+
+#menu_haut{
+	margin-right: 4vw;
+}
+
+header a{
+	text-decoration: none;
+}
+
+#pictos_haut a{
+	padding: 5px 0;
+}
+
+#pictos_haut a:first-child{
+	padding-right: 20px;
+}
+
+#menu_haut li{
+	display: inline-flex;  /*inline flex s'adresse aux enfants*/
+}
+
+#menu_haut a{
+	padding: 5px 10px;
+	color: white;
+}
+
+/************************************************************************************/
+
+#slider{
+	position: relative;
+	height: 90vh;
+	background: url("../images/snowboard-1.jpg") no-repeat right center / cover; /*right center=focaliser*/
+}
+
+#text_slider{
+	position: absolute;
+	z-index: 1;
+	left: 25%;
+	top: 15%;
+	color: #fff;
+	border: 10px double white;
+	
+}
+
+#text_slider h1{
+	font-size: 3em;
+	margin: 10vw;
+}
+
+.cta{
+	float: right;
+	margin: 25px 10px 10px 10px;
+	border: none;
+}
+
+.cta a{
+	padding: 8px 25px;
+	display: block;					/*permert que la balise <a> soit dimensionnable en height*/
+	color: #fff;
+	text-decoration: none;
+	background-color: #000;
+	border: 1px solid grey;
+}
+
+/************************************************************************************/
+
+#produits{
+	text-align: center;
+	padding: 3vw 0;
+}
+#produits img{
+	width: 100%;
+	padding: 1vw 0;
+}
+
+/************************************************************************************/
+
+#shop{
+	background: url("../images/vetements-snowboard.jpg") no-repeat right 31% / cover;
+	min-height: 30vw;
+	color: white;
+	padding: 8vw 45% 4vw 10%;
+}
+
+/************************************************************************************/
+
+#features{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 3vw 10%;
+}
+
+#features figure{
+	text-align: left;
+	width: 25% ;
+}
+
+#features img, #features figcaption{
+	width: 100%;						/*rends les images proportionelles*/
+	padding: 5px 2.5%;
+}
+
+/************************************************************************************/
+
+footer{
+	background-color: #000;
+	color: white;	
+	display: flex;
+	padding: 2vw 10%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}	
+
+footer h2{
+	font-size: 1.2em;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer a{
+	text-decoration: none;
+	color: inherit;
+}
+
+footer .zone_footer{
+	width: 25%;
+}
+
+footer .pre_footer{
+	font-size: 0.9em;
+	margin-top: 5vw;
+}
+
+.zone_footer form{
+	margin: 10px 0 20px;
+	display: flex;
+}
+
+.zone_footer form input{
+	padding: 5px 10px;
+	width: 75%;
+}
+
+.zone_footer form input [type=submit]{
+	flex: 1;
+}
+
+#social{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#chat img{
+	display:flex;
+	padding: 0 ;
+	margin: 0 ;
+}
+
